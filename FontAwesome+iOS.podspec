@@ -15,7 +15,7 @@ This project uses the FontAwesome fix made by Pit Garbe that you can find at htt
   s.platform     = :ios, '5.0'
   s.source_files = '*.{h,m}'
   s.exclude_files = 'Demo'
-  s.resources = "Resources/*.ttf"
+  s.resources = "Resources/*.otf"
   s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   s.requires_arc = true
 end

@@ -9,6 +9,7 @@
 #import "FAAppDelegate.h"
 #import "FAViewController.h"
 #import "FATableViewController.h"
+#import "FACustomViewController.h"
 
 @implementation FAAppDelegate
 
@@ -17,9 +18,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.tabBarController = [[UITabBarController alloc] init];
     FATableViewController *tableViewController = [[FATableViewController alloc] init];
+    FACustomViewController *customController = [[FACustomViewController alloc] init];
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     FAViewController *viewController = [[FAViewController alloc] init];
-    [self.tabBarController setViewControllers:@[navigationController, viewController]];
+    [self.tabBarController setViewControllers:@[navigationController, viewController, customController]];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
